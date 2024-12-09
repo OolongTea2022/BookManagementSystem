@@ -1,0 +1,11 @@
+# 公共配置文件
+spring:
+  application:
+    name: BookManagementSystem
+
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: mysql://43.156.55.92:3306/library?useUnicode=true&characterEncoding=utf8
+    username: library
+    password: WLXTEsCeMmW6WpfR

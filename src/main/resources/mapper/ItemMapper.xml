@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.ItemMapper">
+
+    <resultMap id="BaseResultMap" type="slj.bms.booksmanagementsystem.model.entity.Item">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="libraryCode" column="library_code" jdbcType="VARCHAR"/>
+            <result property="total" column="total" jdbcType="INTEGER"/>
+            <result property="restCount" column="rest_count" jdbcType="INTEGER"/>
+            <result property="loanCount" column="loan_count" jdbcType="INTEGER"/>
+            <result property="reserveCount" column="reserve_count" jdbcType="INTEGER"/>
+            <result property="loseCount" column="lose_count" jdbcType="INTEGER"/>
+            <result property="itemDetailId" column="item_detail_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,library_code,total,
+        rest_count,loan_count,reserve_count,
+        lose_count,item_detail_id
+    </sql>
+</mapper>
