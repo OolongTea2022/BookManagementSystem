@@ -14,6 +14,7 @@ import java.io.Serializable;
 @TableName(value ="admin")
 @Data
 public class Admin implements Serializable {
+
     /**
      * 管理员姓名
      */
